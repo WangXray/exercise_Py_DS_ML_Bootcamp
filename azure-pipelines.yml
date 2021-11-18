@@ -18,15 +18,9 @@ jobs:
       Python27:
         python.version: '2.7'
       Python35:
-        python.version: '3.5'
-      Python36:
         python.version: '3.6'
-
-steps:
-  - task: UsePythonVersion@0
-    inputs:
-      versionSpec: '$(python.version)'
-
-- script: python src/example.py
+      Python36:
+        python.version: '3.9'
+        script: python src/example.py
 
   displayName: 'Run a multi-line script'
